@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "dev": "tsx watch src/server.ts",
+  "build": "tsc",
+  "start": "node dist/server.js",
+  "db:init": "tsx src/database/init.ts",
+  "db:seed": "tsx src/database/seed.ts"
   },
   "keywords": [],
   "author": "",
@@ -21,4 +25,7 @@
     "tsx": "^4.23.15",
     "zod": "^4.6.7"
   }
+
+  
+
 }
